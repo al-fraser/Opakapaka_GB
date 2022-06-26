@@ -1,0 +1,320 @@
+/* General Styling */
+body, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+
+.container-fluid {
+  padding: 0 2%;
+}
+
+/* Title Section CSS */
+/* Main background image for the landing page */
+.title-img {
+  width: 100%;
+  position: absolute;
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+}
+
+/* Styling & Positioning for the main text on landing page */
+.opening-text {
+  text-align: center;
+  position: relative;
+  padding: 20% 5% 20%;
+}
+
+/* Heading styling for the title section */
+.title-h4 {
+  font-size: 2vw;
+  line-height: 3rem;
+}
+
+.title-h1 {
+  font-size: 5vw;
+}
+
+.title-btn {
+  font-weight: 600;
+  font-size: 3vw;
+  margin-top: 3%;
+}
+
+.tel-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.tel-link:hover {
+  color: #000000;
+}
+
+/* responsiveness for anything smaller than an iPad Mini */
+@media (max-width: 821px) {
+  .title-img {
+    padding-top: 5%;
+  }
+
+  .opening-text {
+    padding-top: 25%;
+  }
+
+  .title-h1 {
+    font-size: 7vw;
+  }
+
+  .title-h4 {
+    display: none;
+  }
+}
+
+/* removing the white space between the main section and experience section */
+@media (max-width: 1200px) {
+  .opening-text {
+    padding-bottom: 15%;
+  }
+}
+
+.title-btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Experiences Section */
+.exp-container {
+  padding: 3% 3%;
+  background-color: #DFF6FF;
+  color: #06283D;
+}
+
+.exp-img {
+  width: 100%;
+}
+
+.exp-text {
+  text-align: right;
+}
+
+.exp-h3 {
+  font-weight: 900;
+}
+
+@media (max-width: 1200px) {
+  .exp-text {
+    text-align: center;
+    padding-top: 2%;
+  }
+
+  .exp-img {
+    padding-top: 8%;
+  }
+}
+
+/* Food carousel section */
+.food-img {
+  width: 100%;
+  -webkit-filter: brightness(60%);
+  filter: brightness(60%);
+}
+
+.carousel {
+  margin: 3%;
+}
+
+.carousel-caption {
+  top: 30%;
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+.food-h5 {
+  font-size: 8vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 450px) {
+  .carousel-caption {
+    top: 30%;
+  }
+
+  .food-opt {
+    display: none;
+  }
+}
+
+/* Menu Section */
+#Menu {
+  background-color: #DFF6FF;
+}
+
+.card {
+  margin: 2% 4%;
+  transition: transform .2s;
+  /* Animation */
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-img {
+  -webkit-filter: brightness(60%);
+  filter: brightness(60%);
+}
+
+.menu-container {
+  margin: 0 3%;
+  padding: 5% 0;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+
+/* Hours of Operation Section */
+#Hours {
+  background-color: #06283D;
+}
+
+/* Creating a circle for the background */
+.circle {
+  -moz-border-radius: 45vw/45vw;
+  -webkit-border-radius: 45vw 45vw;
+  border-radius: 45vw/45vw;
+  border: solid 10px #fff;
+  width: 45vw;
+  height: 45vw;
+  position: relative;
+  left: 25%;
+}
+
+.hours-container {
+  text-align: center;
+  padding: 3%;
+}
+
+.hour-text-contain {
+  position: relative;
+  top: 25%;
+}
+
+@media (max-width: 550px) {
+  .circle {
+    border: solid 5px #fff;
+  }
+
+  .hour-text-contain {
+    top: 20%;
+  }
+}
+
+.date-style {
+  font-size: 2vw;
+}
+
+.open-style {
+  font-size: 4vw;
+  padding: 3% 0;
+}
+
+.time-style {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw;
+}
+
+/* Contact us section */
+#contact-us {
+  margin: auto;
+}
+
+.contact-h3 {
+  font-size: 3vw;
+  font-weight: 700;
+  padding-bottom: 2.5%;
+}
+
+.contact-h5 {
+  font-size: 2vw;
+  font-weight: 500;
+  padding-top: 1.5%;
+}
+
+.contact-img {
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+  position: absolute;
+  width: 100%;
+  padding: 3%;
+  z-index: 0;
+}
+
+.contact-container {
+  font-size: 1.5vw;
+  line-height: 3vw;
+  padding: 10% 0 40%;
+  position: relative;
+  left: 15%;
+  z-index: 1;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .contact-container {
+    line-height: 2vw;
+  }
+}
+
+/* Footer section */
+#footer {
+  background-color: #000000;
+}
+
+.footer-container {
+  font-size: 1vw;
+  padding: 1% 0;
+  margin: 0;
+  color: #fff;
+}
+
+.copyright-pos {
+  display: inline;
+  right: 3%;
+  position: relative;
+  margin: 0;
+}
+
+.icon-container {
+  display: inline;
+  position: relative;
+  left: 92.5%
+}
+
+.icon-style {
+  color: #fff;
+  padding: 0.5%;
+}
+
+
+@media (max-width: 821px) {
+  .copyright-pos {
+    display: block;
+    left: 42%;
+  }
+
+  .icon-container {
+    display: block;
+    left: 44%;
+    padding: 3% 0;
+    font-size: 5em;
+  }
+}
